@@ -72,6 +72,7 @@ public class flow_simulator extends StarMacro {
         There are two files required to implement this code and they are both expected from the pore_microstructural_generator.
         1. pore_bodies_*: Colum names: [X, Y, Z, pore body radius (microns), half domain length (microns), number of branches]. The number of rows is the number of pores.
         2. pore_throats_*: Colum names: [X_1, Y_1, Z_1, X_2, Y_2, Z_2, pore throat radius (microns)].
+        3. Star.sim: This file is in the root folder, please not that the software requires the file to be saved in the sever working directory of your STAR CCM+ setup.
         */
 
         String pore_bodies_file = "./Data/pore_bodies_" + count + ".csv"; // This is the pore_bodies output from  pore_microstructural_generator.
