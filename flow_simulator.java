@@ -114,7 +114,7 @@ public class flow_simulator extends StarMacro {
 
           /*
           ######################################
-          ###### Important Read me ##############
+          ###### Important Read Me ##############
           ######################################
         
           All the data imported are in microns. However, STAR CCM+ in this code is in S.I unit which is meters. So we need to divide the micron numbers by 1,000,000.
@@ -122,6 +122,8 @@ public class flow_simulator extends StarMacro {
           First step: We divided by 100, so you will notice that when all the data from the loaded files were first used.
           Second step: That leaves a second division by 10000 to arrive at the correct convertion of " / 1000000". 
           The second division by 10000 was applied at a scale tool in star CCM+ later in the code before meshing and flow simulation. So all dimesnsions were probably scale at that point.
+          
+          It is also important to note that all the output files are in S.I units and permeability already converted to mD.
           */
           pore_bodies_array[i][0] = xpos /100;
           pore_bodies_array[i][1] = ypos /100;
